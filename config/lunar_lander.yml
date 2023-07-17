@@ -1,0 +1,25 @@
+# HP of class Node
+Node:
+  mu: 0.0
+  sigma: 0.05
+  bias_min_value: -30.0
+  bias_max_value: 30.0
+  mut_prob: 0.7
+  agg_fn: sum
+  act_fn: tanh
+# HP of class Connection
+Connection:
+  mu: 0.0
+  sigma: 0.05
+  weight_min_value: -30.0
+  weight_max_value: 30.0
+  mut_prob: 0.7
+# HP of class Genome
+Genome:
+  add_node_prob: 0.0 # 0.5
+  add_connect_prob: 0.0 # 0.5
+  change_node_prob: 0.5
+  change_connect_prob: 0.5
+# HP of class SpeciesSet
+SpeciesSet:
+  compatibility_threshold: 10.0
